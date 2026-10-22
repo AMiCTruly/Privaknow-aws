@@ -142,7 +142,7 @@ Plaintext
 │       └── deploy.yml          # GitHub Actions CI/CD pipeline
 └── README.md
 
-Local Deployment & Setup
+## Local Deployment & Setup
 Prerequisites
 
     AWS CLI configured with administrator or deployer credentials (aws configure)
