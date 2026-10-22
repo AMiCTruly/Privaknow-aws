@@ -153,7 +153,7 @@ Prerequisites
 
     Anthropic API Key
 
-Step 1: Provision Secret in SSM
+##    Step 1: Provision Secret in SSM
 
 Store your Anthropic API key as an encrypted parameter:
 Bash
@@ -164,7 +164,7 @@ aws ssm put-parameter \
   --type "SecureString" \
   --region us-east-1
 
-Step 2: Deploy Infrastructure via Terraform
+##    Step 2: Deploy Infrastructure via Terraform
 Bash
 
 cd infra
