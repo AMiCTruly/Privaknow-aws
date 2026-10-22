@@ -1,13 +1,8 @@
-PrivaKnow — Serverless AI Privacy Policy Analyzer
+## PrivaKnow — Serverless AI Privacy Policy Analyzer
 
 An event-driven, serverless cloud service that extracts structured risk assessments from privacy policies using Claude Haiku. It implements a cache-aside pattern backed by Amazon DynamoDB and cryptographic hashing (SHA-256) to eliminate redundant LLM API costs and reduce latency by over 98% on repeat analyses.
 Architecture Overview
 Code snippet
-
-flowchart LR
-    subgraph ClientLayer ["Client Layer"]
-        Client["Client / Frontend<br/>(Browser / Extension)"]
-    end
 
     subgraph AWSCloud ["AWS Cloud (us-east-1)"]
         APIGW["Amazon API Gateway<br/>(HTTP API: POST /analyze)"]
